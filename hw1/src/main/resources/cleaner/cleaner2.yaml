@@ -1,0 +1,2 @@
+class: cleaner.HtmlCleanAnnotator
+HtmlCleanerClass: cleaner.LeoHtmlCleaner

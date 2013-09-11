@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" /><title>Bregman divergence - Wikipedia, the free encyclopedia</title>
+<meta name="generator" content="MediaWiki 1.22wmf13" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Bregman_divergence&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Bregman_divergence&amp;action=edit" />
+<link rel="shortcut icon" href="//bits.wikimedia.org/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="http://en.wikipedia.org/wiki/Bregman_divergence" />
+<link rel="stylesheet" href="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cteahouse%7Cext.rtlcite%2Cwikihiero%7Cext.uls.nojs%7Cext.visualEditor.viewPageTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmw.PopUpMediaTransform%7Cskins.vector&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:0de201fdea5d684523607ed88007b127 */</style>
+
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Bregman_divergence","wgTitle":"Bregman divergence","wgCurRevisionId":568429653,"wgArticleId":4491248,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Geometric algorithms","Statistical distance measures"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Bregman_divergence","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgVectorEnabledModules":{"collapsiblenav":true,"expandablesearch":false,"footercleanup":true,"sectioneditlinks":false,"experiments":true},"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"templateEditor":false,"templates":false,"preview":false,"previewDialog":false,"publish":false,"toc":false},"wgArticleFeedbackv5Permissions":{"aft-reader":true,"aft-member":false,"aft-editor":false,"aft-monitor":false,"aft-administrator":false,"aft-oversighter":false,"aft-noone":false},"wgVisualEditor":{"isPageWatched":false,"magnifyClipIconURL":"//bits.wikimedia.org/static-1.22wmf13/skins/common/images/magnify-clip.png","pageLanguageCode":"en","pageLanguageDir":"ltr"},"wikilove-recipient":"","wikilove-anon":0,"wgGuidedTourHelpGuiderUrl":"Help:Guided tours/guider","wgULSAcceptLanguageList":["en-us","en"],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","Geo":{"city":"","country":""},"wgNoticeProject":"wikipedia","aftv5Article":{"id":4491248,"title":"Bregman divergence","namespace":0,"categories":["Geometric algorithms","Statistical distance measures"],"permissionLevel":false},"wgWikibaseItemId":"q4960382"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":false,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,
+"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"flaggedrevssimpleui":1,"flaggedrevsstable":0,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"vector-simplesearch":1,"vector-collapsiblenav":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"aftv5-last-filter":null,"visualeditor-enable":1,"visualeditor-betatempdisable":0,"wikilove-enabled":1,"echo-subscriptions-web-page-review":true,"echo-subscriptions-email-page-review":false,"ep_showtoplink":false,"ep_bulkdelorgs":false,"ep_bulkdelcourses":true,"ep_showdyk":true,"echo-notify-show-link":true,"echo-show-alert":true,"echo-email-frequency":0,"echo-email-format":"html","echo-subscriptions-email-system":true,"echo-subscriptions-web-system":true,"echo-subscriptions-email-other":false,"echo-subscriptions-web-other":true,"echo-subscriptions-email-edit-user-talk":false,"echo-subscriptions-web-edit-user-talk":true,"echo-subscriptions-email-reverted":false,
+"echo-subscriptions-web-reverted":true,"echo-subscriptions-email-article-linked":false,"echo-subscriptions-web-article-linked":false,"echo-subscriptions-email-mention":false,"echo-subscriptions-web-mention":true,"echo-subscriptions-web-edit-thank":true,"echo-subscriptions-email-edit-thank":false,"gettingstarted-task-toolbar-show-intro":true,"uls-preferences":"","variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs108":false,"searchNs109":false,"searchNs446":false,"searchNs447":false,"searchNs710":false,"searchNs711":false,"searchNs828":false,"searchNs829":false,"gadget-teahouse":1,"gadget-ReferenceTooltips":1,"gadget-DRN-wizard":1,"gadget-charinsert":1,"gadget-mySandbox":
+1});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: enwiki:resourceloader:filter:minify-js:7:d64fdd14b27a3ab11e40eb0e01b5991f */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.centralauth.centralautologin","ext.vector.footerCleanup","ext.visualEditor.viewPageTarget.init","ext.wikimediaShopLink.core","ext.uls.init","ext.uls.interface","wikibase.client.init","ext.centralNotice.bannerController","skins.vector.js"]);
+}</script>
+<script src="//bits.wikimedia.org/geoiplookup"></script><link rel="dns-prefetch" href="//meta.wikimedia.org" /><!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static-1.22wmf13/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Bregman_divergence skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<div id="siteNotice"><!-- CentralNotice --></div>
+						<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Bregman divergence</span></h1>
+			<div id="bodyContent">
+								<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-navigation">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, a <b>Bregman divergence</b> or <b>Bregman distance</b> is similar to a <a href="/wiki/Metric_(mathematics)" title="Metric (mathematics)">metric</a>, but does not satisfy the <a href="/wiki/Triangle_inequality" title="Triangle inequality">triangle inequality</a> nor symmetry. There are two ways in which Bregman divergences are important. Firstly, they generalize squared Euclidean distance to a class of distances that all share similar properties. Secondly, they bear a strong connection to <a href="/wiki/Exponential_family" title="Exponential family">exponential families</a> of distributions; as has been shown by (Banerjee et al. 2005), there is a <a href="/wiki/Bijection" title="Bijection">bijection</a> between regular exponential families and regular Bregman divergences.</p>
+<p>Bregman divergences are named after <a href="/wiki/L._M._Bregman" title="L. M. Bregman" class="mw-redirect">L. M. Bregman</a>, who introduced the concept in 1967. More recently researchers in geometric algorithms have shown that many important algorithms can be generalized from Euclidean metrics to distances defined by Bregman divergence (Banerjee et al. 2005; Nielsen and Nock 2006; Boissonnat et al. 2010).</p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Properties"><span class="tocnumber">2</span> <span class="toctext">Properties</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Generalizing_projective_duality"><span class="tocnumber">4</span> <span class="toctext">Generalizing projective duality</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Matrix_Bregman_divergences.2C_functional_Bregman_divergences_and_the_submodular_Bregman_divergences"><span class="tocnumber">5</span> <span class="toctext">Matrix Bregman divergences, functional Bregman divergences and the submodular Bregman divergences</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="Definition">Definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bregman_divergence&amp;action=edit&amp;section=1" title="Edit section: Definition">edit source</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Bregman_divergence&amp;veaction=edit&amp;section=1" title="Edit section: Definition" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Let <img class="tex" alt="F: \Omega \to \mathbb{R} " src="//upload.wikimedia.org/math/3/1/d/31da9c4f859647eb6b3b83d2e89d1b0d.png" /> be a continuously-differentiable real-valued and strictly <a href="/wiki/Convex_function" title="Convex function">convex function</a> defined on a closed <a href="/wiki/Convex_set" title="Convex set">convex set</a> <img class="tex" alt="\Omega" src="//upload.wikimedia.org/math/b/9/d/b9d99db8626de63193c7fe96273a6cae.png" />.</p>
+<p>The Bregman distance associated with <i>F</i> for points <img class="tex" alt="p, q \in \Omega" src="//upload.wikimedia.org/math/c/3/f/c3fd4fa71a1ec97e4d26a9ad01190ab4.png" /> is the difference between the value of <i>F</i> at point <i>p</i> and the value of the first-order <a href="/wiki/Taylor_expansion" title="Taylor expansion" class="mw-redirect">Taylor expansion</a> of <i>F</i> around point <i>q</i> evaluated at point <i>p</i>:</p>
+<dl>
+<dd><img class="tex" alt="D_F^q(p, q) = F(p)-F(q)-\langle \nabla F(q), p-q\rangle. " src="//upload.wikimedia.org/math/b/f/3/bf3af1256d66a4053c894ce347c8eac1.png" /></dd>
+</dl>
+<h2><span class="mw-headline" id="Properties">Properties</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bregman_divergence&amp;action=edit&amp;section=2" title="Edit section: Properties">edit source</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Bregman_divergence&amp;veaction=edit&amp;section=2" title="Edit section: Properties" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><b>Non-negativity</b>: <img class="tex" alt="D_F^q(p, q) \ge 0" src="//upload.wikimedia.org/math/f/2/1/f21cbbc233ea31ee796f19139e3d4524.png" /> for all p, q. This is a consequence of the convexity of F.</li>
+<li><b>Convexity</b>:<img class="tex" alt="D_F^q(p, q)" src="//upload.wikimedia.org/math/d/8/a/d8afff7672efddd08f8ea82e71664979.png" /> is convex in its first argument, but not necessarily in the second argument (see <sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup>)</li>
+<li><b>Linearity</b>: If we think of the Bregman distance as an operator on the function <i>F</i>, then it is linear with respect to non-negative coefficients. In other words, for <img class="tex" alt="F_1, F_2" src="//upload.wikimedia.org/math/8/b/7/8b73bdbf452fd7cf6840411396bfb043.png" /> strictly convex and differentiable, and <img class="tex" alt="\lambda \ge 0" src="//upload.wikimedia.org/math/4/3/2/432b4cfb979f14a140b7205d6bc5dc56.png" />,</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="D_{F_1 + \lambda F_2}^q(p, q) = D_{F_1}^q(p, q) + \lambda D_{F_2}^q(p, q)" src="//upload.wikimedia.org/math/2/5/2/252b670446bc70ee17f5e8bcbd683f83.png" /></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li><b>Duality</b>: The function F has a <a href="/wiki/Convex_conjugate" title="Convex conjugate">convex conjugate</a> <img class="tex" alt="F^*" src="//upload.wikimedia.org/math/3/1/1/311568fc471ef84dc10567a48a170378.png" />. The Bregman distance defined with respect to <img class="tex" alt="F^*" src="//upload.wikimedia.org/math/3/1/1/311568fc471ef84dc10567a48a170378.png" /> has an interesting relationship to <img class="tex" alt="D_F^q(p, q)" src="//upload.wikimedia.org/math/d/8/a/d8afff7672efddd08f8ea82e71664979.png" /></li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="D_{F^*}^{q^*}(p^*, q^*) = D_F^p(q, p)" src="//upload.wikimedia.org/math/3/c/4/3c4b9421129d624f896abbcdb45ab1ef.png" /></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>Here, <img class="tex" alt="p^* = \nabla F(p)" src="//upload.wikimedia.org/math/7/e/4/7e4c0123736dcf7f4e1cfec4db9257d9.png" /> is the dual point corresponding to p</dd>
+</dl>
+<ul>
+<li>A key result about Bregman divergences is that, given a random vector, the mean vector minimizes the expected Bregman divergence from the random vector. This result generalizes the textbook result that the mean of a set minimizes total squared error to elements in the set. This result was proved for the vector case by (Banerjee et al. 2005), and extended to the case of functions/distributions by (Frigyik et al. 2008). This result is important because it further justifies using a mean as a representative of a random set, particularly in Bayesian estimation.</li>
+</ul>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bregman_divergence&amp;action=edit&amp;section=3" title="Edit section: Examples">edit source</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Bregman_divergence&amp;veaction=edit&amp;section=3" title="Edit section: Examples" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Squared Euclidean distance <img class="tex" alt="D_F^y(x,y) = \|x - y\|^2" src="//upload.wikimedia.org/math/9/1/b/91bd2660224d911f23b418ed81660057.png" /> is the canonical example of a Bregman distance, generated by the convex function <img class="tex" alt="F(x) = \|x\|^2" src="//upload.wikimedia.org/math/f/3/a/f3af0c35662e499b26079e4de96e9f28.png" /></li>
+</ul>
+<ul>
+<li>The squared <a href="/wiki/Mahalanobis_distance" title="Mahalanobis distance">Mahalanobis distance</a>, <img class="tex" alt="D_F^y(x,y)=\tfrac{1}{2}(x-y)^T Q (x-y)" src="//upload.wikimedia.org/math/5/a/1/5a1706c9e99f502f6f853a989ee5b140.png" /> which is generated by the convex function <img class="tex" alt="F(x) = \tfrac{1}{2} x^T Q x" src="//upload.wikimedia.org/math/4/6/6/46654d1d8e9f6636cca7d6b67ad8edf8.png" />. This can be thought of as a generalization of the above squared Euclidean distance.</li>
+</ul>
+<ul>
+<li>The generalized <a href="/wiki/Kullback%E2%80%93Leibler_divergence" title="Kullback–Leibler divergence">Kullback–Leibler divergence</a></li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="D_F^q(p, q) = \sum p(i) \log \frac{p(i)}{q(i)} - \sum p(i) + \sum q(i)" src="//upload.wikimedia.org/math/b/8/e/b8e20f5967c482fa40741cc56e80ce71.png" /></dd>
+</dl>
+</dd>
+<dd>is generated by the convex function
+<dl>
+<dd><img class="tex" alt="F(p) = \sum_i p(i)\log p(i) - \sum p(i)" src="//upload.wikimedia.org/math/6/1/b/61bbb6b56b5f1ef57bde2bdfb8438874.png" /></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>The <a href="/wiki/Itakura%E2%80%93Saito_distance" title="Itakura–Saito distance">Itakura–Saito distance</a>,</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="D_F^q(p, q) = \sum_i \left(\frac {p(i)}{q(i)} - \log \frac{p(i)}{q(i)} - 1 \right)" src="//upload.wikimedia.org/math/f/4/5/f453d9c175aa748530f841fa22703651.png" /></dd>
+</dl>
+</dd>
+<dd>is generated by the convex function
+<dl>
+<dd><img class="tex" alt="F(p) = - \sum \log p(i)" src="//upload.wikimedia.org/math/f/9/e/f9e78d7c0d03b5a2afcb86dbe37bb78a.png" /></dd>
+</dl>
+</dd>
+</dl>
+<h2><span class="mw-headline" id="Generalizing_projective_duality">Generalizing projective duality</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bregman_divergence&amp;action=edit&amp;section=4" title="Edit section: Generalizing projective duality">edit source</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Bregman_divergence&amp;veaction=edit&amp;section=4" title="Edit section: Generalizing projective duality" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A key tool in <a href="/wiki/Computational_geometry" title="Computational geometry">computational geometry</a> is the idea of <a href="/wiki/Projective_duality" title="Projective duality" class="mw-redirect">projective duality</a>, which maps points to hyperplanes and vice versa, while preserving incidence and above-below relationships. There are numerous analytical forms of the projective dual: one common form maps the point <img class="tex" alt="p = (p_1, \ldots p_d)" src="//upload.wikimedia.org/math/0/f/f/0ff653816253b932ad4033778361a3e4.png" /> to the hyperplane <img class="tex" alt="x_{d+1} = \sum_1^d 2p_i x_i" src="//upload.wikimedia.org/math/5/1/2/5120781fd0ad3b506b76c68755338a44.png" />. This mapping can be interpreted (identifying the hyperplane with its normal) as the convex conjugate mapping that takes the point p to its dual point <img class="tex" alt="p^* = \nabla F(p)" src="//upload.wikimedia.org/math/7/e/4/7e4c0123736dcf7f4e1cfec4db9257d9.png" />, where <i>F</i> defines the <i>d</i>-dimensional paraboloid <img class="tex" alt="x_{d+1} = \sum x_i^2" src="//upload.wikimedia.org/math/0/d/d/0dd35e4b9e57cdda3c3ad020f0e639d6.png" />.</p>
+<p>If we now replace the paraboloid by an arbitrary convex function, we obtain a different dual mapping that retains the incidence and above-below properties of the standard projective dual. This implies that natural dual concepts in computational geometry like <a href="/wiki/Voronoi_diagram" title="Voronoi diagram">Voronoi diagrams</a> and <a href="/wiki/Delaunay_triangulation" title="Delaunay triangulation">Delaunay triangulations</a> retain their meaning in distance spaces defined by an arbitrary Bregman divergence. Thus, algorithms from "normal" geometry extend directly to these spaces (Boissonnat, Nielsen and Nock, 2010)</p>
+<h2><span class="mw-headline" id="Matrix_Bregman_divergences.2C_functional_Bregman_divergences_and_the_submodular_Bregman_divergences">Matrix Bregman divergences, functional Bregman divergences and the submodular Bregman divergences</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bregman_divergence&amp;action=edit&amp;section=5" title="Edit section: Matrix Bregman divergences, functional Bregman divergences and the submodular Bregman divergences">edit source</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Bregman_divergence&amp;veaction=edit&amp;section=5" title="Edit section: Matrix Bregman divergences, functional Bregman divergences and the submodular Bregman divergences" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Bregman divergences can also be defined between matrices, between functions, and between measures (distributions). Bregman divergences between matrices include the <a href="/w/index.php?title=Stein%27s_loss&amp;action=edit&amp;redlink=1" class="new" title="Stein's loss (page does not exist)">Stein's loss</a> and <a href="/wiki/Von_Neumann_entropy" title="Von Neumann entropy">von Neumann entropy</a>. Bregman divergences between functions include total squared error, relative entropy, and squared bias; see the references by Frigyik et al. below for definitions and properties. Similarly Bregman divergences have also been defined over sets, through a <a href="/wiki/Submodular_set_function" title="Submodular set function">submodular set function</a> which is known as the discrete analog of a <a href="/wiki/Convex_function" title="Convex function">convex function</a>. The submodular Bregman divergences subsume a number of discrete distance measures, like the <a href="/wiki/Hamming_distance" title="Hamming distance">Hamming distance</a>, <a href="/wiki/Precision_and_recall" title="Precision and recall">precision and recall</a>, <a href="/wiki/Mutual_information" title="Mutual information">mutual information</a> and some other set based distance measures (see Iyer &amp; Bilmes, 2012) for more details and properties of the submodular Bregman.)</p>
+<p>For a list of common of matrix Bregman divergences, see Table 15.1 in.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bregman_divergence&amp;action=edit&amp;section=6" title="Edit section: References">edit source</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Bregman_divergence&amp;veaction=edit&amp;section=6" title="Edit section: References" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">"Joint and separate convexity of the Bregman Distance", by H. Bauschke and J. Borwein, in D. Butnariu, Y. Censor, and S. Reich, editors, <i>Inherently Parallel Algorithms in Feasibility and Optimization and their Applications</i>, Elsevier 2001</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">"Matrix Information Geometry", R. Nock, B. Magdalou, E. Briys and F. Nielsen, <a rel="nofollow" class="external text" href="http://www1.univ-ag.fr/~rnock/Articles/Drafts/book12-nmbn.pdf">pdf</a>, from this <a rel="nofollow" class="external text" href="http://www.springerlink.com/index/10.1007/978-3-642-30232-9">book</a></span></li>
+</ol>
+</div>
+<div class="refbegin references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2;">
+<ul>
+<li><span class="citation journal">Banerjee, Arindam; Merugu, Srujana; Dhillon, Inderjit S.; Ghosh, Joydeep (2005). <a rel="nofollow" class="external text" href="http://jmlr.csail.mit.edu/papers/v6/banerjee05b.html">"Clustering with Bregman divergences"</a>. <i><a href="/wiki/Journal_of_Machine_Learning_Research" title="Journal of Machine Learning Research">Journal of Machine Learning Research</a></i> <b>6</b>: 1705–1749.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABregman+divergence&amp;rft.atitle=Clustering+with+Bregman+divergences&amp;rft.au=Banerjee%2C+Arindam&amp;rft.au=Dhillon%2C+Inderjit+S.&amp;rft.aufirst=Arindam&amp;rft.au=Ghosh%2C+Joydeep&amp;rft.aulast=Banerjee&amp;rft.au=Merugu%2C+Srujana&amp;rft.date=2005&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fjmlr.csail.mit.edu%2Fpapers%2Fv6%2Fbanerjee05b.html&amp;rft.jtitle=Journal+of+Machine+Learning+Research&amp;rft.pages=1705%E2%80%931749&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=6" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation journal">Bregman, L. M. (1967). "The relaxation method of finding the common points of convex sets and its application to the solution of problems in convex programming". <i>USSR Computational Mathematics and Mathematical Physics</i> <b>7</b> (3): 200–217. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1016%2F0041-5553%2867%2990040-7">10.1016/0041-5553(67)90040-7</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABregman+divergence&amp;rft.atitle=The+relaxation+method+of+finding+the+common+points+of+convex+sets+and+its+application+to+the+solution+of+problems+in+convex+programming&amp;rft.au=Bregman%2C+L.+M.&amp;rft.aufirst=L.+M.&amp;rft.aulast=Bregman&amp;rft.date=1967&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1016%2F0041-5553%2867%2990040-7&amp;rft.issue=3&amp;rft.jtitle=USSR+Computational+Mathematics+and+Mathematical+Physics&amp;rft.pages=200%E2%80%93217&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=7" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation journal">Frigyik, Bela A.; Srivastava, Santosh; Gupta, Maya R. (2008). <a rel="nofollow" class="external text" href="http://www.ee.washington.edu/research/guptalab/publications/FrigyikSrivastavaGupta.pdf">"Functional Bregman Divergences and Bayesian Estimation of Distributions"</a>. <i><a href="/wiki/IEEE_Transactions_on_Information_Theory" title="IEEE Transactions on Information Theory">IEEE Transactions on Information Theory</a></i> <b>54</b> (11): 5130–5139. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1109%2FTIT.2008.929943">10.1109/TIT.2008.929943</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABregman+divergence&amp;rft.atitle=Functional+Bregman+Divergences+and+Bayesian+Estimation+of+Distributions&amp;rft.aufirst=Bela+A.&amp;rft.au=Frigyik%2C+Bela+A.&amp;rft.au=Gupta%2C+Maya+R.&amp;rft.aulast=Frigyik&amp;rft.au=Srivastava%2C+Santosh&amp;rft.date=2008&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.ee.washington.edu%2Fresearch%2Fguptalab%2Fpublications%2FFrigyikSrivastavaGupta.pdf&amp;rft_id=info%3Adoi%2F10.1109%2FTIT.2008.929943&amp;rft.issue=11&amp;rft.jtitle=IEEE+Transactions+on+Information+Theory&amp;rft.pages=5130%E2%80%935139&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=54" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation conference">Iyer, Rishabh.; Bilmes, Jeff (2012). "The Submodular Bregman divergences and Lovasz Bregman divergences with Applications". <i><a href="/wiki/Conference_on_Neural_Information_Processing_Systems" title="Conference on Neural Information Processing Systems">Conference on Neural Information Processing Systems</a></i>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABregman+divergence&amp;rft.atitle=Conference+on+Neural+Information+Processing+Systems&amp;rft.au=Bilmes%2C+Jeff&amp;rft.aufirst=Rishabh.&amp;rft.au=Iyer%2C+Rishabh.&amp;rft.aulast=Iyer&amp;rft.btitle=The+Submodular+Bregman+divergences+and+Lovasz+Bregman+divergences+with+Applications&amp;rft.date=2012&amp;rft.genre=bookitem&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation book">Frigyik, Bela A.; Srivastava, Santosh; Gupta, Maya R. (2008). <a rel="nofollow" class="external text" href="http://www.ee.washington.edu/research/guptalab/publications/functionalDerivativesIntroduction.pdf"><i>An Introduction to Functional Derivatives</i></a>. UWEE Tech Report 2008-0001. University of Washington, Dept. of Electrical Engineering.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABregman+divergence&amp;rft.aufirst=Bela+A.&amp;rft.au=Frigyik%2C+Bela+A.&amp;rft.au=Gupta%2C+Maya+R.&amp;rft.aulast=Frigyik&amp;rft.au=Srivastava%2C+Santosh&amp;rft.btitle=An+Introduction+to+Functional+Derivatives&amp;rft.date=2008&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.ee.washington.edu%2Fresearch%2Fguptalab%2Fpublications%2FfunctionalDerivativesIntroduction.pdf&amp;rft.pub=University+of+Washington%2C+Dept.+of+Electrical+Engineering&amp;rft.series=UWEE+Tech+Report+2008-0001&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation conference">Nielsen, Frank; Nock, Richard (2009). <a rel="nofollow" class="external text" href="http://www.lix.polytechnique.fr/~nielsen/ISVD09-GenBregmanVD.pdf">"The dual Voronoi diagrams with respect to representational Bregman divergences"</a>. <i>Proc. 6th International Symposium on Voronoi Diagrams</i>. IEEE. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1109%2FISVD.2009.15">10.1109/ISVD.2009.15</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABregman+divergence&amp;rft.atitle=Proc.+6th+International+Symposium+on+Voronoi+Diagrams&amp;rft.aufirst=Frank&amp;rft.aulast=Nielsen&amp;rft.au=Nielsen%2C+Frank&amp;rft.au=Nock%2C+Richard&amp;rft.btitle=The+dual+Voronoi+diagrams+with+respect+to+representational+Bregman+divergences&amp;rft.date=2009&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fwww.lix.polytechnique.fr%2F~nielsen%2FISVD09-GenBregmanVD.pdf&amp;rft_id=info%3Adoi%2F10.1109%2FISVD.2009.15&amp;rft.pub=IEEE&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation Journal">Nielsen, Frank; Nock, Richard (2007). "On the Centroids of Symmetrized Bregman Divergences". <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<a rel="nofollow" class="external text" href="http://arxiv.org/abs/0711.3242">0711.3242</a>&#160;[<a rel="nofollow" class="external text" href="http://arxiv.org/archive/cs.CG">cs.CG</a>].</span></li>
+<li><span class="citation conference">Nielsen, Frank; Boissonnat, Jean-Daniel; Nock, Richard (2007). <a rel="nofollow" class="external text" href="http://www.csl.sony.co.jp/person/nielsen/PT/SoCG07/">"On Visualizing Bregman Voronoi diagrams"</a>. <i>Proc. 23rd ACM Symposium on Computational Geometry (video track)</i>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABregman+divergence&amp;rft.atitle=Proc.+23rd+ACM+Symposium+on+Computational+Geometry+%28video+track%29&amp;rft.au=Boissonnat%2C+Jean-Daniel&amp;rft.aufirst=Frank&amp;rft.aulast=Nielsen&amp;rft.au=Nielsen%2C+Frank&amp;rft.au=Nock%2C+Richard&amp;rft.btitle=On+Visualizing+Bregman+Voronoi+diagrams&amp;rft.date=2007&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fwww.csl.sony.co.jp%2Fperson%2Fnielsen%2FPT%2FSoCG07%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation journal">Boissonnat, Jean-Daniel; Nielsen, Frank; Nock, Richard (2010). <a rel="nofollow" class="external text" href="http://hal.archives-ouvertes.fr/hal-00488441/en/">"Bregman Voronoi Diagrams"</a>. <i><a href="/wiki/Discrete_and_Computational_Geometry" title="Discrete and Computational Geometry">Discrete and Computational Geometry</a></i>. 44 (2).</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABregman+divergence&amp;rft.atitle=Bregman+Voronoi+Diagrams&amp;rft.au=Boissonnat%2C+Jean-Daniel&amp;rft.aufirst=Jean-Daniel&amp;rft.aulast=Boissonnat&amp;rft.au=Nielsen%2C+Frank&amp;rft.au=Nock%2C+Richard&amp;rft.date=2010&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fhal.archives-ouvertes.fr%2Fhal-00488441%2Fen%2F&amp;rft.jtitle=Discrete+and+Computational+Geometry&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=44+%282%29" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation conference">Nielsen, Frank; Nock, Richard (2006). "On approximating the smallest enclosing Bregman Balls". <i>Proc. 22nd ACM Symposium on Computational Geometry</i>. pp.&#160;485–486. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1145%2F1137856.1137931">10.1145/1137856.1137931</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABregman+divergence&amp;rft.atitle=Proc.+22nd+ACM+Symposium+on+Computational+Geometry&amp;rft.aufirst=Frank&amp;rft.aulast=Nielsen&amp;rft.au=Nielsen%2C+Frank&amp;rft.au=Nock%2C+Richard&amp;rft.btitle=On+approximating+the+smallest+enclosing+Bregman+Balls&amp;rft.date=2006&amp;rft.genre=bookitem&amp;rft_id=info%3Adoi%2F10.1145%2F1137856.1137931&amp;rft.pages=485%E2%80%93486&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bregman_divergence&amp;action=edit&amp;section=7" title="Edit section: External links">edit source</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Bregman_divergence&amp;veaction=edit&amp;section=7" title="Edit section: External links" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.csl.sony.co.jp/person/nielsen/BregmanDivergence/index.html">Bregman divergence interactive applet</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.csl.sony.co.jp/person/nielsen/BVDapplet/index.html">Bregman Voronoi diagram applet</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.sonycsl.co.jp/person/nielsen/BregmanBall/MINIBALL/">Exact Smallest Enclosing Bregman Ball applet</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.sonycsl.co.jp/person/nielsen/BregmanBall/BBC/index.html">Approximating smallest enclosing Bregman ball applet</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.sonycsl.co.jp/person/nielsen/BregmanCentroids/">Sided and Symmetrized Bregman centroids</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.400 seconds
+Real time usage: 0.572 seconds
+Preprocessor visited node count: 1111/1000000
+Preprocessor generated node count: 12291/1500000
+Post‐expand include size: 18486/2048000 bytes
+Template argument size: 1081/2048000 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 0/500
+Lua time usage: 0.037s
+Lua memory usage: 1.56 MB
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:4491248-0!0!0!!en!*!* and timestamp 20130824231213 -->
+<noscript><img src="//en.wikipedia.org/w/index.php?title=Special:CentralAutoLogin/start&amp;type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>								<div class="printfooter">
+				Retrieved from "<a href="http://en.wikipedia.org/w/index.php?title=Bregman_divergence&amp;oldid=568429653">http://en.wikipedia.org/w/index.php?title=Bregman_divergence&amp;oldid=568429653</a>"				</div>
+												<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Geometric_algorithms" title="Category:Geometric algorithms">Geometric algorithms</a></li><li><a href="/wiki/Category:Statistical_distance_measures" title="Category:Statistical distance measures">Statistical distance measures</a></li></ul></div></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+				<div id="p-personal" role="navigation" class="">
+	<h3>Personal tools</h3>
+	<ul>
+<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Bregman+divergence&amp;type=signup">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Bregman+divergence" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>	</ul>
+</div>
+				<div id="left-navigation">
+					<div id="p-namespaces" role="navigation" class="vectorTabs">
+	<h3>Namespaces</h3>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Bregman_divergence"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+					<li  id="ca-talk"><span><a href="/wiki/Talk:Bregman_divergence"  title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>
+			</ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3><span>Variants</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+				</div>
+				<div id="right-navigation">
+					<div id="p-views" role="navigation" class="vectorTabs">
+	<h3>Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/wiki/Bregman_divergence" >Read</a></span></li>
+					<li id="ca-edit"><span><a href="/w/index.php?title=Bregman_divergence&amp;action=edit"  title="You can edit this page. &#10;Please review your changes before saving. [e]" accesskey="e">Edit source</a></span></li>
+					<li id="ca-ve-edit"><span><a href="/w/index.php?title=Bregman_divergence&amp;veaction=edit"  title="Edit this page with VisualEditor [v]" accesskey="v">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Bregman_divergence&amp;action=history"  title="Past versions of this page [h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet">
+	<h3><span>Actions</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="/w/index.php" id="searchform">
+				<div id="simpleSearch">
+						<input name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" />						<button type="submit" name="button" title="Search Wikipedia for this text" id="searchButton"><img src="//bits.wikimedia.org/static-1.22wmf13/skins/vector/images/search-ltr.png?303-4" alt="Search" width="12" height="13" /></button>								<input type='hidden' name="title" value="Special:Search"/>
+		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel">
+					<div id="p-logo" role="banner"><a style="background-image: url(//upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<div class="portal" role="navigation" id='p-navigation'>
+	<h3>Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+			<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+			<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+			<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+			<li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-interaction'>
+	<h3>Interaction</h3>
+	<div class="body">
+		<ul>
+			<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+			<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-tb'>
+	<h3>Toolbox</h3>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Bregman_divergence" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Bregman_divergence" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li>
+			<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li id="t-permalink"><a href="/w/index.php?title=Bregman_divergence&amp;oldid=568429653" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="/w/index.php?title=Bregman_divergence&amp;action=info">Page information</a></li>
+			<li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q4960382" title="Link to connected data repository item">Data item</a></li>
+<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Bregman_divergence&amp;id=568429653" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-coll-print_export'>
+	<h3>Print/export</h3>
+	<div class="body">
+		<ul>
+			<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Bregman+divergence">Create a book</a></li>
+			<li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Bregman+divergence&amp;oldid=568429653&amp;writer=rl">Download as PDF</a></li>
+			<li id="t-print"><a href="/w/index.php?title=Bregman_divergence&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-lang'>
+	<h3>Languages</h3>
+	<div class="body">
+		<ul>
+			<li class="interwiki-fr"><a href="//fr.wikipedia.org/wiki/Divergence_de_Bregman" title="Divergence de Bregman" lang="fr" hreflang="fr">Français</a></li>
+			<li class="uls-p-lang-dummy"><a href="#"></a></li>
+			<li class="wbc-editpage"><a href="//www.wikidata.org/wiki/Q4960382#sitelinks-wikipedia" title="Edit interlanguage links">Edit links</a></li>
+		</ul>
+	</div>
+</div>
+			</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 13 August 2013 at 23:27.<br /></li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a> <br/>
+Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a class="external" href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/wiki/Bregman_divergence" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="//wikimediafoundation.org/"><img src="//bits.wikimedia.org/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="//bits.wikimedia.org/static-1.22wmf13/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mobile.desktop","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","mw.MwEmbedSupport.style","ext.vector.collapsibleNav","ext.articleFeedbackv5.startup","ext.gettingstarted.logging","ext.gettingstarted.openTask","schema.HttpsSupport","ext.coreEvents.httpsSupport","ext.navigationTiming","mw.PopUpMediaTransform"],null,true);
+}</script>
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<!-- Served by mw1078 in 0.186 secs. -->
+	</body>
+</html>

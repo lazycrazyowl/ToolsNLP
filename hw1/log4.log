@@ -1,0 +1,120 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Tools for NLP hw1 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ hw1 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ hw1 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 18 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ hw1 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) @ hw1 >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ hw1 ---
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) @ hw1 <<<
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ hw1 ---
+Experiment UUID: aca1d7e5-7914-4601-9767-de179ca36e05
+log4j:WARN No appenders could be found for logger (org.springframework.core.io.support.PathMatchingResourcePatternResolver).
+log4j:WARN Please initialize the log4j system properly.
+Phase: 1|HtmlCleaner> (lazy-load=false)
+Using script: ../scripts/nltk_clean.py
+	- HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]
+ Total # of options configured: 1
+[0] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput7662211272734422104.tmp /tmp/ExternalParserOutput8894195273199983154.tmp
+[0]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 1s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Verizon Communications - Wikipedia, the free encyclopedia.txt'
+[1] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput3399622918571175602.tmp /tmp/ExternalParserOutput8105476852992982529.tmp
+[1]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Compare 0 Credit Cards   Low Interest & Interest Free Credit Cards.txt'
+[2] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput3177286582165985015.tmp /tmp/ExternalParserOutput5313945396722231933.tmp
+[2]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Redeveloped Kodak exits bankruptcy   NWAonline.txt'
+[3] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput2762825087282806893.tmp /tmp/ExternalParserOutput876146733651541451.tmp
+[3]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Gimme a break  Next Android called 'KitKat'   Internet & Media - CNET News.txt'
+[4] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput29983777778666737.tmp /tmp/ExternalParserOutput7596643696429955402.tmp
+[4]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Poisson distribution - Wikipedia, the free encyclopedia.txt'
+[5] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput8888793079863517219.tmp /tmp/ExternalParserOutput8695682472909328494.tmp
+[5]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Saudi Arabia - Wikipedia, the free encyclopedia.txt'
+[6] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput8431911327590079809.tmp /tmp/ExternalParserOutput8800254783776481866.tmp
+[6]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/World War II - Wikipedia, the free encyclopedia.txt'
+[7] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput1883195032022220523.tmp /tmp/ExternalParserOutput3631898921764527674.tmp
+[7]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Market capitalization - Wikipedia, the free encyclopedia.txt'
+[8] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput2534474697161303002.tmp /tmp/ExternalParserOutput8620929223922338980.tmp
+[8]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/KitKat 4.4 ad pokes fun at Apple designer Jony Ive   Mobile - CNET News.txt'
+[9] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput667458471368661648.tmp /tmp/ExternalParserOutput7641622988311348027.tmp
+[9]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Weiner gets into a shouting match with a Jewish voter in NYC - Yahoo! News.txt'
+[10] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput597601097009739445.tmp /tmp/ExternalParserOutput4637793437420005530.tmp
+[10]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Judge sides with Ohio gay couple on death form   Wichita Eagle.txt'
+[11] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput583843150622294871.tmp /tmp/ExternalParserOutput5105317730419985346.tmp
+[11]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 1s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Album - Wikipedia, the free encyclopedia.txt'
+[12] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput6494918333393963039.tmp /tmp/ExternalParserOutput2330410548226660300.tmp
+[12]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 1s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Report  Tsunami would swamp California's economy - Yahoo! News.txt'
+[13] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput507805037685742948.tmp /tmp/ExternalParserOutput2100898930121853078.tmp
+[13]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 1s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Epic journey  24 hours and 2,000 miles for a Moto X   Crave - CNET.txt'
+[14] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput1223607772136628694.tmp /tmp/ExternalParserOutput1225099554066504817.tmp
+[14]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Atomic bombings of Hiroshima and Nagasaki - Wikipedia, the free encyclopedia.txt'
+[15] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput2985085711780597137.tmp /tmp/ExternalParserOutput8240736884164735374.tmp
+[15]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Mystery Alignment of Dying Stars Puzzles Scientists - Yahoo! News.txt'
+[16] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput8911097817444326498.tmp /tmp/ExternalParserOutput6776016852022483584.tmp
+[16]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Download.com site feedback Forum and Discussion - CNET Forums.txt'
+[17] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput7222819549925922831.tmp /tmp/ExternalParserOutput2496725284095186774.tmp
+[17]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Spears (album) - Wikipedia, the free encyclopedia.txt'
+[18] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput834796433180938697.tmp /tmp/ExternalParserOutput334996790201737057.tmp
+[18]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Wikipedia, the free encyclopedia.txt'
+[19] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput8237851490708610369.tmp /tmp/ExternalParserOutput5812668229192160196.tmp
+[19]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 1s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Stock valuation - Wikipedia, the free encyclopedia.txt'
+[20] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput4492637025998247336.tmp /tmp/ExternalParserOutput1267472471727844163.tmp
+[20]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 1s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Qualcomm jumps into wearables with Toq smartwatch   Mobile - CNET News.txt'
+[21] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput3397388829416139757.tmp /tmp/ExternalParserOutput1342145387391790758.tmp
+[21]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py]: 1s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner4/Bobbi Brown - Wikipedia, the free encyclopedia.txt'
+[22] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.ExternalHtmlCleaner#extScript:../scripts/nltk_clean.py] on trace 
+Executing: ../scripts/nltk_clean.py /tmp/ExternalParserInput8980668608876120978.tmp /tmp/ExternalParserOutput4865273932496994550.tmp

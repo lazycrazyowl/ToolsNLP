@@ -1,0 +1,23 @@
+configuration: 
+  name: oaqa-tutorial
+  author: oaqa
+collection-reader:
+  inherit: collection_reader.filesystem-collection-reader
+  InputDirectory: ../DataHTML
+  HtmlCleanerClass: cleaner.ExternalHtmlCleaner
+  extScript: ../scripts/html2text.sh
+  
+pipeline:
+  - inherit: ecd.phase  
+    name: SentSplit
+    options: |
+      - inherit: sentsplit.sentsplit
+
+  - inherit: ecd.phase  
+    name: Tokenize
+    options: |
+      - inherit: tokenizer.tokenizer
+
+  #- inherit: cas_consumer.simple-print
+  #- inherit: cas_consumer.XmiWriterCasConsumer
+  - inherit: cas_consumer.AnnotationPrinter

@@ -1,0 +1,198 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Tools for NLP hw1 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ hw1 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ hw1 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 18 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ hw1 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) @ hw1 >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ hw1 ---
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) @ hw1 <<<
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ hw1 ---
+Experiment UUID: 80e5fb8a-b25a-48bf-b6a2-3d29f0a2ed3f
+log4j:WARN No appenders could be found for logger (org.springframework.core.io.support.PathMatchingResourcePatternResolver).
+log4j:WARN Please initialize the log4j system properly.
+Phase: 1|HtmlCleaner> (lazy-load=false)
+	- HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]
+ Total # of options configured: 1
+[0] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[0]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 1s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Verizon Communications - Wikipedia, the free encyclopedia.txt'
+[1] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[1]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Compare 0 Credit Cards   Low Interest & Interest Free Credit Cards.txt'
+[2] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[2]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Redeveloped Kodak exits bankruptcy   NWAonline.txt'
+[3] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[3]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Gimme a break  Next Android called 'KitKat'   Internet & Media - CNET News.txt'
+[4] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[4]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Poisson distribution - Wikipedia, the free encyclopedia.txt'
+[5] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[5]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Saudi Arabia - Wikipedia, the free encyclopedia.txt'
+[6] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[6]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 1s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/World War II - Wikipedia, the free encyclopedia.txt'
+[7] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[7]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Market capitalization - Wikipedia, the free encyclopedia.txt'
+[8] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[8]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/KitKat 4.4 ad pokes fun at Apple designer Jony Ive   Mobile - CNET News.txt'
+[9] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[9]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Weiner gets into a shouting match with a Jewish voter in NYC - Yahoo! News.txt'
+[10] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[10]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Judge sides with Ohio gay couple on death form   Wichita Eagle.txt'
+[11] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[11]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Album - Wikipedia, the free encyclopedia.txt'
+[12] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[12]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Report  Tsunami would swamp California's economy - Yahoo! News.txt'
+[13] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[13]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Epic journey  24 hours and 2,000 miles for a Moto X   Crave - CNET.txt'
+[14] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[14]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Atomic bombings of Hiroshima and Nagasaki - Wikipedia, the free encyclopedia.txt'
+[15] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[15]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Mystery Alignment of Dying Stars Puzzles Scientists - Yahoo! News.txt'
+[16] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[16]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Download.com site feedback Forum and Discussion - CNET Forums.txt'
+[17] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[17]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Spears (album) - Wikipedia, the free encyclopedia.txt'
+[18] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[18]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Wikipedia, the free encyclopedia.txt'
+[19] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[19]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Stock valuation - Wikipedia, the free encyclopedia.txt'
+[20] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[20]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Qualcomm jumps into wearables with Toq smartwatch   Mobile - CNET News.txt'
+[21] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[21]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Bobbi Brown - Wikipedia, the free encyclopedia.txt'
+[22] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[22]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Facebook hashtags said to have zero viral impact   Internet & Media - CNET News.txt'
+[23] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[23]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Cnet download installing      on my PC- MySearchDial - CNET Download.com site feedback Forums.txt'
+[24] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[24]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/The iPhone 5S rumor roundup   iPhone Atlas - CNET Reviews.txt'
+[25] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[25]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Bregman divergence - Wikipedia, the free encyclopedia.txt'
+[26] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[26]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Bill of Rights 1689 - Wikipedia, the free encyclopedia.txt'
+[27] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[27]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Statistics - Wikipedia, the free encyclopedia.txt'
+[28] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[28]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Intrinsic value (finance) - Wikipedia, the free encyclopedia.txt'
+[29] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[29]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/iPhone 6  Most-wanted features   iPhone Atlas - CNET Reviews.txt'
+[30] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[30]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/NASDAQ - Wikipedia, the free encyclopedia.txt'
+[31] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[31]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Percussion instrument - Wikipedia, the free encyclopedia.txt'
+[32] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[32]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/The Boys from Baghdad High - Wikipedia, the free encyclopedia.txt'
+[33] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[33]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Could the future of Glass and wearables be hidden in Moto X    Android Atlas - CNET Reviews.txt'
+[34] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[34]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Metric (mathematics) - Wikipedia, the free encyclopedia.txt'
+[35] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[35]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Moto X prices dropping just weeks after release   Crave - CNET.txt'
+[36] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[36]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Make-up artist - Wikipedia, the free encyclopedia.txt'
+[37] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[37]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Famous Players-Lasky - Wikipedia, the free encyclopedia.txt'
+[38] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[38]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Amazon Kindle Paperwhite draws bright line between e-readers, tablets - The Washington Post.txt'
+[39] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[39]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Seth Rosenblatt - CNET.txt'
+[40] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[40]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Bob Sheppard (musician) - Wikipedia, the free encyclopedia.txt'
+[41] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[41]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/British Army - Wikipedia, the free encyclopedia.txt'
+[42] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[42]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Feature-packed fitness tracking - CNET Reviews.txt'
+[43] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[43]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 1s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Winston Churchill - Wikipedia, the free encyclopedia.txt'
+[44] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[44]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Fat Man - Wikipedia, the free encyclopedia.txt'
+[45] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[45]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Technology News - CNET News.txt'
+[46] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[46]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/3D is evil for September's DC Comics   Tech Culture - CNET News.txt'
+[47] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[47]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Rickie Lee Jones - Wikipedia, the free encyclopedia.txt'
+[48] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[48]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/BBC News - Android KitKat unveiled in Google surprise move.txt'
+[49] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[49]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Why It's So Easy To Ignore Your Girlfriend - Discovery News   Watch the video - Yahoo! Screen.txt'
+[50] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[50]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Monte Westmore - Wikipedia, the free encyclopedia.txt'
+[51] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[51]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Francis Bacon - Wikipedia, the free encyclopedia.txt'
+[52] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[52]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Blues - Wikipedia, the free encyclopedia.txt'
+[53] Executing option: HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner] on trace 
+[53]  Execution time for option HtmlCleanAnnotator[HtmlCleanerClass:cleaner.LeoHtmlCleaner]: 0s
+Writing to the file: '/home/leo/SourceTreeGit/ToolsNLP/OutHw1/Cleaner2/Exponential family - Wikipedia, the free encyclopedia.txt'
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 29.026s
+[INFO] Finished at: Wed Sep 11 12:15:27 EDT 2013
+[INFO] Final Memory: 26M/381M
+[INFO] ------------------------------------------------------------------------
