@@ -4,8 +4,9 @@ configuration:
 collection-reader:
   inherit: collection_reader.filesystem-collection-reader
   InputDirectory: ../DataHTML
-  HtmlCleanerClass: cleaner.ExternalHtmlCleaner
-  extScript: ../scripts/html2text.sh
+  HtmlCleanerClass: cleaner.RegexpHtmlCleaner
+  #HtmlCleanerClass: cleaner.ExternalHtmlCleaner
+  #extScript: ../scripts/html2text.sh
   
 pipeline:
   - inherit: ecd.phase  
