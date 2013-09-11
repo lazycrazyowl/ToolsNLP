@@ -10,4 +10,3 @@ Sub-project:
 1. hw1: five simple HTML cleaners (regexp, my own cleaner, Apache Tika, NLTK, and Unix html2text). You can run them all by executing the script launches/runAll.sh
 2. hw2: wrappers for sentence segmenters and tokenizers. You can run the sample pipeline by executing the script launches/run_hw2.sh
 
-
