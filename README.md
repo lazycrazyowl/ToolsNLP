@@ -10,3 +10,9 @@ Sub-project:
 1. Ex1: five simple HTML cleaners (regexp, my own cleaner, Apache Tika, NLTK, and Unix html2text). You can run them all by executing the script launches/runAll.sh
 2. Ex2: wrappers for sentence segmenters and tokenizers. You can run the sample pipeline by executing the script launches/run_ex2.sh
 3. Ex3: the wrapper for clearTK/OpenNLP POS tagger.
+
+
+Additional requirements:
+
+1. Unix utility html2tex
+2. Python + nltk.util.html_clean
