@@ -14,5 +14,5 @@ Sub-project:
 
 Additional requirements:
 
-1. Unix utility html2tex
+1. Unix utility html2text
 2. Python + nltk.util.html_clean
