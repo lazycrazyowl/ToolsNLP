@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
-	<name>ToolsNLP_TypeSystem_hw2</name>
-	<description>Tools for NLP Type System - hw2</description>
+	<name>ToolsNLP_TypeSystem_ex3</name>
+	<description>Tools for NLP Type System - ex3</description>
 	<version>1.0</version>
 	<vendor>Leonid Boytsov</vendor>
 	<types>
