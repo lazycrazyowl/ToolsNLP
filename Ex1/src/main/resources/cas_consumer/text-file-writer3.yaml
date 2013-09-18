@@ -1,0 +1,7 @@
+class: cas_consumer.TextFileWriter
+
+outputDir: ../OutEx1/Cleaner3
+#printToConsole: true
+
+persistence-provider: |
+  inherit: ecd.default-log-persistence-provider

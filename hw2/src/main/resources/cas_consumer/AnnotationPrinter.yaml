@@ -1,6 +1,0 @@
-class: org.apache.uima.examples.cpe.AnnotationPrinter
-
-outputFile: ../OutHw2/output.txt
-
-persistence-provider: |
-  inherit: ecd.default-log-persistence-provider
