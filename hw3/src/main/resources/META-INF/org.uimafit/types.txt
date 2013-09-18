@@ -1,0 +1,2 @@
+classpath*:types/TypeSystem.xml
+classpath*:types/SourceDocumentInformation.xml
