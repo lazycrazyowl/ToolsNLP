@@ -309,8 +309,9 @@ extends JCasAnnotator_ImplBase
             sentence = getSentenceText(an);
             
             if (sentence.indexOf('\n') >= 0) {
-              throw new Exception("BUG!!!!!!!!!!!!!");
-            }
+              pw.close();
+              throw new Exception("BUG: should not have the newline here");
+            }           
 
             if (pattern_SENNA_bad_sentence.matcher(sentence).matches()) {
                 getContext().getLogger().log(Level.INFO, "Skipping bad sentence: " + sentence);

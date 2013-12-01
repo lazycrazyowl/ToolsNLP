@@ -20,6 +20,11 @@ pipeline:
     options: |
       - inherit: parsers.senna
 
+  - inherit: ecd.phase
+    name: extract
+    options: |
+      - inherit: extractors.align_senna
+
   #- inherit: cas_consumer.simple-print
   - inherit: cas_consumer.XmiWriterCasConsumer
   - inherit: cas_consumer.AnnotationPrinter

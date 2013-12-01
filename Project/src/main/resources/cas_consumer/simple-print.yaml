@@ -1,4 +1,0 @@
-class: cas_consumer.SimplePrint
-
-persistence-provider: |
-  inherit: ecd.default-log-persistence-provider
