@@ -17,3 +17,4 @@ Additional requirements:
 
 1. Unix utility html2text
 2. Python + nltk.util.html_clean
+3. Compiled Senna parser (http://ml.nec-labs.com/senna/).
