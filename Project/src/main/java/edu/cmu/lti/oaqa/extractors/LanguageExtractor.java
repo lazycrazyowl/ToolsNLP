@@ -16,10 +16,6 @@
 package edu.cmu.lti.oaqa.extractors;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.TreeSet;
-import java.util.Map.Entry;
-import java.util.Set;
 
 import org.apache.uima.cas.FSIterator;
 import org.apache.uima.jcas.JCas;
@@ -30,51 +26,20 @@ import edu.cmu.lti.Chunk;
 import edu.cmu.lti.NamedEntity;
 import edu.cmu.lti.SemanticRole;
 
-public class CapitalExtractor extends Extractor {
+public class LanguageExtractor extends Extractor {
   // Just a fake constructor, to be able to create an instance 
   // using forName(...).newinstance()
-  public CapitalExtractor() {}
-  @Override
-  public Set<String> aggregate(ArrayList<String> resList, Set<String> exceptions) {
-    HashMap<String, Integer>  tmpRes = new HashMap<String, Integer>();
-    
-    for (String t: resList) {
-      if (exceptions == null || !exceptions.contains(t)) {
-        Integer cnt = tmpRes.containsKey(t) ? tmpRes.get(t) : 0;
-        tmpRes.put(t, cnt + 1);
-      }
-    }
-    
-    Integer maxQty = 0;
-    String  maxKey = "";
-    
-    TreeSet<String> res = new TreeSet<String>(); 
-    
-    for (Entry<String, Integer> entry:tmpRes.entrySet()) {
-      if (entry.getValue() > maxQty) {
-        maxKey = entry.getKey();
-        maxQty = entry.getValue();
-      }
-    }
-    if (!maxKey.isEmpty()) res.add(maxKey);
-    return res;
-  }
-  
+  public LanguageExtractor() {}
   @Override
   public void process(JCas aJCas, Annotation sentence, ArrayList<String> res) {
     FSIterator<Annotation> nerIter = AnnotUtils.getSubIterator(aJCas, 
                                                        NamedEntity.typeIndexID,
                                                        sentence, true);
     
-    HashMap<String, Integer> tmpRes = new HashMap<String, Integer>();
-    
     for (;nerIter.isValid(); nerIter.moveToNext()) {
       NamedEntity  ner = (NamedEntity) nerIter.get();
       
-      if (ner.getEntityType().equals("LOC") ||
-          /* sometimes we get this label by mistake */
-          ner.getEntityType().equals("ORG")  
-          ){               
+      if (ner.getEntityType().equals("MISC")) {
         // 1st heuristic is based on the connection through the role labels
         FSIterator<Annotation> roleIter = AnnotUtils.getSubIterator(aJCas, 
                                               SemanticRole.typeIndexID,
@@ -88,19 +53,15 @@ public class CapitalExtractor extends Extractor {
             SemanticRole parent = role.getParent();
             if (parent == null) continue;
             String       parText = parent.getCoveredText();
-            if (parText.toLowerCase().equals("is")) {
+            if (parText.toLowerCase().equals("is") ||
+                parText.toLowerCase().equals("are")) {
               FSArray arrChild = parent.getChildren();
               
               for (int i = 0; i < arrChild.size(); ++i) {
                 SemanticRole child = (SemanticRole)arrChild.get(i);
-                
-                /* 
-                 * Sometimes in the same A1 argument, e.g.:
-                 * The capital and largest city, Suva, is on Viti Levu.
-                 */
-                if (/*child != role && */
-                    child.getCoveredText().toLowerCase().contains("capital") &&
-                    child.getLabel().equals("A1")) {
+
+                if (/*child != role && */ // sometimes maybe in the same argument
+                    child.getCoveredText().toLowerCase().contains("official language")) {
                   ok = true;
                   break;
                 }
@@ -115,7 +76,7 @@ public class CapitalExtractor extends Extractor {
         for (;chunkIter.isValid(); chunkIter.moveToNext()) {
           Chunk chunk = (Chunk)chunkIter.get();
           if (chunk.getChunkType().equals("NP")) {
-              if (chunk.getCoveredText().toLowerCase().contains("capital") &&
+              if (chunk.getCoveredText().toLowerCase().contains("official language") &&
               ner.getBegin() >= chunk.getBegin() &&
               ner.getEnd() <= chunk.getEnd()) {
               ok = true;
@@ -126,7 +87,7 @@ public class CapitalExtractor extends Extractor {
         
         String key = ner.getCoveredText();
         if (ok) res.add(key);
-        if (ok) System.out.println("## capital candidate: " + key + " found in ## " + sentence.getCoveredText());
+        if (ok) System.out.println("## language '" + key + "' found in ## " + sentence.getCoveredText());
 
       }
     }

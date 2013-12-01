@@ -17,19 +17,19 @@ package edu.cmu.lti.oaqa.extractors;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
 
 import org.apache.commons.lang.StringUtils;
-
 import org.apache.uima.UimaContext;
 import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
 import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
 import org.apache.uima.cas.FSIterator;
-
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.tcas.Annotation;
 import org.apache.uima.resource.ResourceInitializationException;
 import org.apache.uima.util.Level;
-
 import org.cleartk.token.type.Sentence;
 
 import edu.cmu.lti.oaqa.framework.types.InputElement;
@@ -98,8 +98,16 @@ public class ExtractorHelper extends JCasAnnotator_ImplBase {
         resList.add(new ArrayList<String>());
       }
       
+      String FileName = new File(quiid).getName();
+      
+      String FileNameParts[] = FileName.split("\\.");
+      String CountryName = FileNameParts[0].replace('_', ' ');
+      
+      TreeSet<String> exceptions = new TreeSet<String>();
+      exceptions.add(CountryName);
+      
       getContext().getLogger().log(Level.INFO, "DOCUMENT: " 
-                                    + new File(quiid).getName());
+          + FileName + " Country: " + CountryName);
 
       
       for (int counter = 1; 
@@ -121,11 +129,11 @@ public class ExtractorHelper extends JCasAnnotator_ImplBase {
       for (int i = 0; i < extrList.size(); ++i) {
         Extractor           e   = extrList.get(i);
         ArrayList<String>   res = resList.get(i);
+        Set<String>         setRes = e.aggregate(res, exceptions);
         
-        getContext().getLogger().log(Level.INFO, "Results for extractor: " 
-                                     + e.getClass().getName());
-        getContext().getLogger().log(Level.INFO, 
-                                     StringUtils.join(res.toArray(), ';'));
+        getContext().getLogger().log(Level.INFO, FileName + "#"  
+                                     + e.getClass().getName() + " : "+ 
+                                     StringUtils.join(setRes.toArray(), ';'));
       }
       
     } catch (Exception e) {

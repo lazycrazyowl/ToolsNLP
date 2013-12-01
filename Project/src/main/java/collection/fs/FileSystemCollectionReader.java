@@ -25,6 +25,8 @@ package collection.fs;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.text.Normalizer;
+import java.text.Normalizer.Form;
 
 import org.apache.uima.resource.ResourceConfigurationException;
 import org.apache.uima.resource.ResourceInitializationException;
@@ -181,6 +183,11 @@ public class FileSystemCollectionReader extends AbstractCollectionReader {
         if (mWorkHorse != null) {
           text = mWorkHorse.CleanText(text, mEncoding);
         }
+        
+        // Remove diacritics as well
+        text = Normalizer.normalize(text, 
+                  Form.NFD).replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
+
 
         return new DataElement(getDataset(), String.valueOf(mCurrentIndex - 1), 
                                text, file.getAbsolutePath());

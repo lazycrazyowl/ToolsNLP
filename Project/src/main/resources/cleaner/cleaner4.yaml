@@ -1,3 +1,0 @@
-class: cleaner.HtmlCleanAnnotator
-HtmlCleanerClass: cleaner.ExternalHtmlCleaner
-extScript: scripts/nltk_clean.py 

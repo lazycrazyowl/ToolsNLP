@@ -16,10 +16,27 @@
 package edu.cmu.lti.oaqa.extractors;
 
 import java.util.ArrayList;
+import java.util.Set;
+import java.util.TreeSet;
 
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.tcas.Annotation;
 
 public abstract class Extractor { 
-  abstract void process(JCas aJCas, Annotation sentence, ArrayList<String> res);
+  // Process one sentence
+  public abstract void process(JCas aJCas, Annotation sentence, ArrayList<String> res);
+  /*
+   *  Aggregate results over all sentences.
+   *  A default version, will just print unique values.
+   */
+  public Set<String> aggregate(ArrayList<String> resList, Set<String> exceptions) {
+    TreeSet<String> res = new TreeSet<String>(); 
+    for (String k: resList) {
+      if (exceptions == null || !exceptions.contains(k)) {
+        res.add(k);
+      }
+    }
+    
+    return res;
+  }
 }

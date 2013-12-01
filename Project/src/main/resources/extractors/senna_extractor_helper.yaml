@@ -1,4 +1,4 @@
 class: edu.cmu.lti.oaqa.extractors.ExtractorHelper
 
-extractor_list: edu.cmu.lti.oaqa.extractors.CapitalExtractor
+extractor_list: edu.cmu.lti.oaqa.extractors.CapitalExtractor,edu.cmu.lti.oaqa.extractors.LanguageExtractor,edu.cmu.lti.oaqa.extractors.ReligionExtractor
 

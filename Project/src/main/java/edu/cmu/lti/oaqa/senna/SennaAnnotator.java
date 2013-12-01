@@ -276,6 +276,7 @@ extends JCasAnnotator_ImplBase
           }
         }               
       }
+      
       return sentence;
     }
 
@@ -639,8 +640,16 @@ extends JCasAnnotator_ImplBase
               // to be finished when we encounter the end of this annotation
             }
             if (label.startsWith("E-")) { // annotation ends
-              annotation.setEnd(sentBegin + spanEnd);
-              annotList.add(annotation);
+              /*
+               *  SENNA may have some buggy output,
+               *  where a start of an annotation is not marked.
+               *  In such as case, we won't set annoation to a non-NULL
+               *  
+               */                    
+              if (annotation != null) {
+                annotation.setEnd(sentBegin + spanEnd);
+                annotList.add(annotation);
+              }
             }
             /*
              * We ignore the case "I-" here, because we care only 
@@ -701,8 +710,16 @@ extends JCasAnnotator_ImplBase
               // to be finished when we encounter the end of this annotation
             }
             if (label.startsWith("E-")) { // annotation ends
-              annotation.setEnd(sentBegin + spanEnd);
-              annotList.add(annotation);
+              /*
+               *  SENNA may have some buggy output,
+               *  where a start of an annotation is not marked.
+               *  In such as case, we won't set annoation to a non-NULL
+               *  
+               */                    
+              if (annotation != null) {              
+                annotation.setEnd(sentBegin + spanEnd);
+                annotList.add(annotation);
+              }
             }
             /*
              * We ignore the case "I-" here, because we care only 
@@ -749,7 +766,6 @@ extends JCasAnnotator_ImplBase
                   // Tricky state machine to start/end various annotation types
                   if (!label.equals("O")) {
                       if (label.startsWith("S-")) { // emit standalone annot.
-
                           annotation = new SemanticRole(jcas);
                           annotation.setBegin(sentBegin + spanBegin);
                           annotation.setEnd(sentBegin + spanEnd);
@@ -774,6 +790,13 @@ extends JCasAnnotator_ImplBase
                       }
                   }
                   if (label.startsWith("E-")) { // 'end annotation'
+                    /*
+                     *  SENNA may have some buggy output,
+                     *  where a start of an annotation is not marked.
+                     *  In such as case, we won't set annoation to a non-NULL
+                     *  
+                     */                    
+                    if (annotation != null) {
                       annotation.setEnd(sentBegin + spanEnd);
                       annotList.add(annotation);
 
@@ -782,7 +805,7 @@ extends JCasAnnotator_ImplBase
                       } else {
                           children.add(annotation);
                       }
-
+                    }
                   }
               }
               // link children to parents

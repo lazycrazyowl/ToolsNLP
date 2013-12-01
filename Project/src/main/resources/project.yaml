@@ -3,8 +3,9 @@ configuration:
   author: oaqa
 collection-reader:
   inherit: collection_reader.filesystem-collection-reader
-  #InputDirectory: ../ProjectDataHTML
-  InputDirectory: ../ProjectSmallDataHTML
+  InputDirectory: ../ProjectDataHTML
+  #InputDirectory: ../ProjectSmallDataHTML
+  #HtmlCleanerClass: cleaner.TikaHtmlCleaner
   HtmlCleanerClass: cleaner.ExternalHtmlCleaner
   extScript: ../scripts/html2text_delbrack.sh
   
