@@ -148,19 +148,23 @@ extends JCasAnnotator_ImplBase
         }
         
         if (annot_types.isEmpty()) {
-            throw new ResourceInitializationException(new Exception("Specify at least annotator type! Parameter: '" + SENNA_ANNOT + "'"));
+            throw new ResourceInitializationException(
+                new Exception("Specify at least annotator type! Parameter: '" 
+                               + SENNA_ANNOT + "'"));
         }
         
         if (config_tmpdir != null) {
             tmpdir = new File(config_tmpdir);
             if (!tmpdir.exists()) {
-                System.out.println("Specified '" + TMPDIR + "' path does not exist: creating "+tmpdir);
+                System.out.println("Specified '" + TMPDIR + 
+                                   "' path does not exist: creating "+tmpdir);
                 tmpdir.mkdirs();
             }
         } else {
 
             tmpdir = new File(System.getProperty("java.io.tmpdir"));
-            System.out.println("Using default value for '" + TMPDIR + "' from system.io.tmpdir: " + tmpdir);
+            System.out.println("Using default value for '" + TMPDIR + 
+                               "' from system.io.tmpdir: " + tmpdir);
         }
         if (!tmpdir.exists()) {
           System.out.println("Specified 'tmpdir' path does not exist: "+tmpdir);
@@ -171,18 +175,23 @@ extends JCasAnnotator_ImplBase
         if (config_binary != null) {
             senna_binary = config_binary;
         } else {
-            getContext().getLogger().log(Level.SEVERE, "Missing Senna binary name: '" + SENNA_BINARY + "'");
+            throw new ResourceInitializationException(
+                  new Exception("Missing Senna binary name: '" 
+                                 + SENNA_BINARY + "'"));
         }
 
         if (config_home != null) {
             senna_home = config_home;
         } else {
-            getContext().getLogger().log(Level.SEVERE, "Missing Senna home: '" + SENNA_HOME + "'");
+            throw new ResourceInitializationException(
+                              new Exception("Missing Senna home: '" 
+                                              + SENNA_HOME + "'"));
         }
         
         if (sentence_annot_type == null) {
-          getContext().getLogger().log(Level.SEVERE, 
-                          "Missing the type of the sentence annotation: '" + SENTENCE_ANNOT_TYPE + "'");
+          throw new ResourceInitializationException(
+                 new Exception("Missing the type of the sentence annotation: '" 
+                               + SENTENCE_ANNOT_TYPE + "'"));
         }
         
         if (config_sent_max_len != null) {
@@ -284,19 +293,16 @@ extends JCasAnnotator_ImplBase
         Vector<Annotation> sentence_tags = new Vector<Annotation>();
 
         // Get an iterator for the Sentence annotations.
-        Class<Annotation>   SentenceAnnotationClass = (Class<Annotation>) Class.forName(sentence_annot_type);
+        Class<Annotation>   SentenceAnnotationClass = 
+                            (Class<Annotation>) Class.forName(sentence_annot_type);
         Field               myField = SentenceAnnotationClass.getDeclaredField("typeIndexID");
         int                 typeIndexId = (Integer)myField.get(null);
         FSIndex<Annotation> SentenceAnnotIndex = 
                             jcas.getJFSIndexRepository().getAnnotationIndex(typeIndexId);
         FSIterator<Annotation> SentenceAnnotIter = SentenceAnnotIndex.iterator();
 
-        if (!SentenceAnnotIter.isValid())
-        {
-            getContext().getLogger().log(Level.SEVERE, "Aha!  No sentences");
-        }
-        else
-            getContext().getLogger().log(Level.INFO, "Sentence count: " + SentenceAnnotIndex.size());
+
+        getContext().getLogger().log(Level.INFO, "Sentence count: " + SentenceAnnotIndex.size());
         String sentence;
 
         int counter=1;

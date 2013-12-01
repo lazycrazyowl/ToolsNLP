@@ -23,7 +23,7 @@ pipeline:
   - inherit: ecd.phase
     name: extract
     options: |
-      - inherit: extractors.align_senna
+      - inherit: extractors.senna_extractor_helper
 
   #- inherit: cas_consumer.simple-print
   - inherit: cas_consumer.XmiWriterCasConsumer
