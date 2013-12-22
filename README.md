@@ -7,8 +7,8 @@ Pre-requisits: Java, Python (nltk.util.clean_html should be installed), and the 
 
 Sub-project:
 
-1. Ex1: five simple HTML cleaners (regexp, my own cleaner, Apache Tika, NLTK, and Unix html2text). You can run them all by executing the script launches/runAll.sh
-2. Ex2: wrappers for sentence segmenters and tokenizers. You can run the sample pipeline by executing the script launches/run_ex2.sh
+1. Ex1: five simple HTML cleaners (regexp, my own cleaner, Apache Tika, NLTK, and Unix html2text). One script launches/runAll.sh runs them all.
+2. Ex2: wrappers for sentence segmenters and tokenizers. The script launches/run_ex2.sh runs them.
 3. Ex3: the wrapper for clearTK/OpenNLP POS tagger.
 4. Project: a rudimentary proof-of-concept information extractor. It attemps to extract the following information from Wikipedia descriptions of countries: capital, languages spoken, religion.
 
